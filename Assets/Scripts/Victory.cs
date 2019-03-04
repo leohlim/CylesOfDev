@@ -7,21 +7,20 @@ using UnityEngine.UI;
 
 public class Victory : MonoBehaviour
 {
-     [SerializeField]
     private Text canvasText = null;
-    private void OnTriggerEnter(Collider other)
+    public GameObject VictoryCanvas;
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-            {
-                canvasText.text = "Cycle One Complete!";
-                NextLevel();
+        Debug.Log("Entered");
+        canvasText = VictoryCanvas.GetComponentInChildren<Text>(); ;
+        VictoryCanvas.SetActive(true);   
+        StartCoroutine("Wait");
             
-            }
     }
 
-    IEnumerator NextLevel()
+    IEnumerator Wait()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
