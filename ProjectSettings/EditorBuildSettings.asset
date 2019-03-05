@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cycle4.unity
     guid: a1183436be0d2904699d094374d7128b
   - enabled: 1
+    path: Assets/Scenes/Cycle5.unity
+    guid: e7838e2e39542644ca86ee6cd1bc1d99
+  - enabled: 1
     path: Assets/Scenes/ComingSoon.unity
     guid: 3df1d674f10b2a74b8c30d342a436fe1
   m_configObjects: {}
