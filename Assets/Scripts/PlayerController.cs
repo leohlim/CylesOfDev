@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Rigidbody playerBody;
     [SerializeField]
-    private float jumpForce = 2f;
+    private float jumpForce = 1.5f;
+    [SerializeField]
+    private float gravityForce = 1.5f;
     private bool isGrounded;
 
     // Start is called before the first frame update
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             playerBody.velocity = new Vector3(playerBody.velocity.x, jumpForce, playerBody.velocity.z);
+            playerBody.AddForce(Vector3.down * gravityForce);
             isGrounded = false;
         }
     }
