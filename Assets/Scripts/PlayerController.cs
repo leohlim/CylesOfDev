@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerBody;
     [SerializeField]
     private float jumpForce = 2f;
+    private bool isGrounded;
 
     // Start is called before the first frame update
     private void Start()
@@ -23,9 +24,18 @@ public class PlayerController : MonoBehaviour
     {
         playerBody.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, playerBody.velocity.y, Input.GetAxis("Vertical") * moveSpeed);
     
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && isGrounded)
         {
             playerBody.velocity = new Vector3(playerBody.velocity.x, jumpForce, playerBody.velocity.z);
+            isGrounded = false;
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
         }
     }
 }

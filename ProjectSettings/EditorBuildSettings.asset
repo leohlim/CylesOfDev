@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/LowPolyNature/Scenes/Demo.unity
+    guid: 098a34d9c68692342943067d2876f441
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/4edd9c0e4dc489147bfe52e9d4f81946
-    guid: 4edd9c0e4dc489147bfe52e9d4f81946
-  - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/7ed9904ffdc8dd24abf9e352893349cf
-    guid: 7ed9904ffdc8dd24abf9e352893349cf
+    path: Assets/LowPolyNature/Scenes/Simple.unity
+    guid: 55a0b71e85d58e34ea55f5f65a929097
+  - enabled: 1
+    path: Assets/Scenes/MainMenu 1.unity
+    guid: afb5d43170b8f03469fc6e8dac1fb032
   - enabled: 1
     path: Assets/Scenes/Cycle1.unity
     guid: d83356f7ee6570c4e9f9a97b95aa20bc
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cycle3.unity
     guid: 9c95738262c35414c8a70e15037ac25f
+  - enabled: 1
+    path: Assets/Scenes/Cycle4.unity
+    guid: a1183436be0d2904699d094374d7128b
+  - enabled: 1
+    path: Assets/Scenes/ComingSoon.unity
+    guid: 3df1d674f10b2a74b8c30d342a436fe1
   m_configObjects: {}

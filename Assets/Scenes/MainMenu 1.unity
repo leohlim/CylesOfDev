@@ -601,7 +601,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Evac
+  m_Text: Cycles of Dev
 --- !u!222 &1315523140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -787,9 +787,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663631445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2456898d3b8dd3444b106cbba3767317, type: 3}
+  m_Script: {fileID: 11500000, guid: 58fad8e45e81b9e47ad7aba9f2b4486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPress: {fileID: 8300000, guid: 92f5ef977fa87974d90867152d4804ff, type: 3}
 --- !u!1 &2027401455
 GameObject:
   m_ObjectHideFlags: 0
